@@ -1,6 +1,5 @@
 cd /gost
-wget -O gost.tar.gz  http://github.com/ginuerzh/gost/releases/download/v${VER}/gost_${VER}_linux_amd64.tar.gz
-tar zxf gost.tar.gz 
-cd /gost/gost_${VER}_linux_amd64
+wget -O gost.gz https://github.com/ginuerzh/gost/releases/download/v2.11.1/gost-linux-amd64-2.11.1.gz
+gunzip -c gost.gz > gost
 chmod +x gost
 ./gost -L $MODE://:$PORT
