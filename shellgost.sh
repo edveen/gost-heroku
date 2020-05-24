@@ -1,0 +1,1 @@
+./gost -v=0 -logtostderr -L $MODE://:$PORT > /dev/null 2>&1 &
